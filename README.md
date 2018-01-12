@@ -184,7 +184,7 @@ a = {'da': [1, 2], 'a': [2, 3], 'c': [3, 4], 'd': [5, 6]}
 print(shuffle_batch(a))
 ```
 
-## Debug a docker image with bash
+## Debug the last docker image with bash
 ```bash
-docker run --entrypoint /bin/bash -i -t 809bfb4de7ee
+docker run --entrypoint /bin/bash -i -t $(docker images -q | head -n1)
 ```
