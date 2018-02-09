@@ -188,3 +188,8 @@ print(shuffle_batch(a))
 ```bash
 docker run --entrypoint /bin/bash -i -t $(docker images -q | head -n1)
 ```
+
+## Run job in background
+```bash
+nohup python /path/to/test.py &
+```
