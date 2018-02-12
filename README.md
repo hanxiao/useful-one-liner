@@ -193,3 +193,8 @@ docker run --entrypoint /bin/bash -i -t $(docker images -q | head -n1)
 ```bash
 nohup python /path/to/test.py &
 ```
+
+## Count word frequencies using dask
+```python
+wordcount = b.str.split().flatten().frequencies().topk(10, lambda x: x[1])
+```
