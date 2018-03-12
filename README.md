@@ -198,3 +198,14 @@ nohup python /path/to/test.py &
 ```python
 wordcount = b.str.split().flatten().frequencies().topk(10, lambda x: x[1])
 ```
+
+## Get CUDA version
+```bash
+nvcc --version
+cat /usr/local/cuda/version.txt
+```
+
+## Get CuDNN version
+```bash
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2 
+```
