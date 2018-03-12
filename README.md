@@ -209,3 +209,8 @@ cat /usr/local/cuda/version.txt
 ```bash
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2 
 ```
+
+## Get Python 3.x path in pyenv
+```bash
+pyenv which python3.6
+```
