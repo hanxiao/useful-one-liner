@@ -224,3 +224,8 @@ pr -w $COLUMNS -m -t <(cat dev-0321-212403.json | jq .pred_answer -r) <(cat dev-
 ```bash
 git config credential.helper store
 ```
+
+## Show diff in color & side-by-side
+```
+icdiff <(cat dev-0321-212403.json | jq .pred_answer -r) <(cat dev-0321-205902.json | jq .pred_answer -r) | less -N
+```
