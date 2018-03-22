@@ -219,3 +219,8 @@ pyenv which python3.6
 ```bash
 pr -w $COLUMNS -m -t dev-0321-205902.json dev-0322-003854.json | less -N
 ```
+
+## Store git credentials
+```bash
+git config credential.helper store
+```
