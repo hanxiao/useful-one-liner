@@ -217,7 +217,7 @@ pyenv which python3.6
 
 ## Show two files side by side
 ```bash
-pr -w $COLUMNS -m -t dev-0321-205902.json dev-0322-003854.json | less -N
+pr -w $COLUMNS -m -t <(cat dev-0321-212403.json | jq .pred_answer -r) <(cat dev-0321-205902.json | jq .pred_answer -r) | less -N
 ```
 
 ## Store git credentials
