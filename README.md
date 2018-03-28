@@ -234,3 +234,8 @@ icdiff <(cat dev-0321-212403.json | jq .pred_answer -r) <(cat dev-0321-205902.js
 ```bash
 dmesg -T| grep -E -i -B100 'killed process'
 ```
+
+## Reset a GPU core
+```bash
+nvidia-smi --gpu-reset --id=1
+```
