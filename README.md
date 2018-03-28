@@ -226,6 +226,11 @@ git config credential.helper store
 ```
 
 ## Show diff in color & side-by-side
-```
+```bash
 icdiff <(cat dev-0321-212403.json | jq .pred_answer -r) <(cat dev-0321-205902.json | jq .pred_answer -r) | less -N
+```
+
+## Show who killed my process
+```bash
+dmesg -T| grep -E -i -B100 'killed process'
 ```
