@@ -239,3 +239,8 @@ dmesg -T| grep -E -i -B100 'killed process'
 ```bash
 nvidia-smi --gpu-reset --id=1
 ```
+
+## Crawling product info
+```bash
+curl 'https://pg.m.tmall.com/shop/shop_auction_search.do?spm=a1z60.7754813.0.0.586e7bc0VkVRiq&suid=217101303&sort=s&p=2&page_size=12&from=h5&shop_id=57895461&ajson=1&_tm_source=tmallsearch&callback=jsonp_39523892' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9,ja;q=0.8,zh-CN;q=0.7,zh;q=0.6,zh-TW;q=0.5,de;q=0.4,fr;q=0.3' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' -H 'accept: */*' -H 'referer: https://pg.m.tmall.com/shop/shop_auction_search.htm?spm=a1z60.7754813.0.0.586e7bc0VkVRiq&suid=217101303&sort=default' -H 'authority: pg.m.tmall.com' -H 'cookie: t=9d87528e8cb0a98ec2e7c2aca598ca2e; _tb_token_=efeebc6181054; cookie2=14e148bf4ada601074ff9c579734c1f5; cna=5xAtE2CZhiUCAQ4RFiTT2tHP; _m_h5_tk=8ed274719ae8756ca310037727728164_1522385620808; _m_h5_tk_enc=a785d68cd0ab1c2b8a440a1f06f2836c; isg=BODgWkxurp6vVhKas-B5DxY2sei4rKeamlU5yFrxKvudVYJ_AviMQ4Qr6fVVYnyL' --compressed
+```
