@@ -249,3 +249,9 @@ curl 'https://pg.m.tmall.com/shop/shop_auction_search.do?spm=a1z60.7754813.0.0.5
 ```bash
 git reset --hard HEAD & git pull
 ```
+
+## Repeat an array in tensorflow
+array([1, 2, 3]) -> array([1, 1, 2, 2, 3, 3])
+```python
+tf.reshape(tf.tile(tf.expand_dims([1, 2, 3], -1),  [1, 2]), [-1])
+```
