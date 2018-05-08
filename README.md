@@ -255,3 +255,9 @@ array([1, 2, 3]) -> array([1, 1, 2, 2, 3, 3])
 ```python
 tf.reshape(tf.tile(tf.expand_dims([1, 2, 3], -1),  [1, 2]), [-1])
 ```
+
+## Faster load large csv matrix using pandas
+```python
+import pandas as pd
+a = pd.read_csv('/data/cips/data/larryjf-v2/passages/embedding.vec', engine='c', sep=' ', index_col=False, header=None).values
+```
