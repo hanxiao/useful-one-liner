@@ -261,3 +261,8 @@ tf.reshape(tf.tile(tf.expand_dims([1, 2, 3], -1),  [1, 2]), [-1])
 import pandas as pd
 a = pd.read_csv('/data/cips/data/larryjf-v2/passages/embedding.vec', engine='c', sep=' ', index_col=False, header=None).values
 ```
+
+## Print specific lines using sed
+```bash
+sed -n '4p;1026241p;6775004p' passage-text.txt
+```
