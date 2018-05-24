@@ -266,3 +266,8 @@ a = pd.read_csv('/data/cips/data/larryjf-v2/passages/embedding.vec', engine='c',
 ```bash
 sed -n '4p;1026241p;6775004p' passage-text.txt
 ```
+
+## Find all core dumps
+```bash
+find ~/ -name core.????? -exec ls -lSdh {} +
+```
