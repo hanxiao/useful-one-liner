@@ -271,3 +271,8 @@ sed -n '4p;1026241p;6775004p' passage-text.txt
 ```bash
 find ~/ -name core.????? -exec ls -lSdh {} +
 ```
+
+## Find all core dumps and delete them
+```bash
+find ~/ -name core.????? -exec rm {} \;
+```
