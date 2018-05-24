@@ -276,3 +276,8 @@ find ~/ -name core.????? -exec ls -lSdh {} +
 ```bash
 find ~/ -name core.????? -exec rm {} \;
 ```
+
+## Find large files
+```bash
+du -hs * | sort -rh
+```
