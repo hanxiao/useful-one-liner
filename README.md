@@ -281,3 +281,8 @@ find ~/ -name core.????? -exec rm {} \;
 ```bash
 du -hs * | sort -rh
 ```
+
+## Concat and uniq vocabulary
+```bash
+cat vocab.* | awk -F" " '!_[$1]++'  > vocab.all
+```
