@@ -286,3 +286,11 @@ du -hs * | sort -rh
 ```bash
 cat vocab.* | awk -F" " '!_[$1]++'  > vocab.all
 ```
+
+## Replace Master with a branch
+```bash
+git checkout seotweaks
+git merge -s ours master
+git checkout master
+git merge seotweaks
+```
