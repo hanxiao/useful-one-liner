@@ -294,3 +294,8 @@ git merge -s ours master
 git checkout master
 git merge seotweaks
 ```
+
+## Kill process with CPU usage < 40%
+```bash
+ps  aux | egrep '[p]ython app.py train'  | awk '{if ($3 < 40.0) { system("kill -9 "$2) }}'
+```
