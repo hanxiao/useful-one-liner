@@ -299,3 +299,8 @@ git merge seotweaks
 ```bash
 ps  aux | egrep '[p]ython app.py train'  | awk '{if ($3 < 40.0) { system("kill -9 "$2) }}'
 ```
+
+## Sort by last column
+```bash
+cat somefile | awk -F' '  '{ print $NF, $0 }' | sort -n -k1
+```
