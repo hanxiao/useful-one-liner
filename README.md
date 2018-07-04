@@ -304,3 +304,8 @@ ps  aux | egrep '[p]ython app.py train'  | awk '{if ($3 < 40.0) { system("kill -
 ```bash
 cat somefile | awk -F' '  '{ print $NF, $0 }' | sort -n -k1
 ```
+
+## Concat multiple files with newline inbetween
+```bash
+awk 1 train.seg.json.a* > all.json
+```
