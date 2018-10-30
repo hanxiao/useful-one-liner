@@ -309,3 +309,8 @@ cat somefile | awk -F' '  '{ print $NF, $0 }' | sort -n -k1
 ```bash
 awk 1 train.seg.json.a* > all.json
 ```
+
+## Add space between characters
+```bash
+sed -e 's/\(.\)/\1 /g' < bert.txt > bert.char.txt
+```
