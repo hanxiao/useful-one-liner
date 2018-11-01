@@ -314,3 +314,8 @@ awk 1 train.seg.json.a* > all.json
 ```bash
 sed -e 's/\(.\)/\1 /g' < bert.txt > bert.char.txt
 ```
+
+## Add line number before each line separated by tab
+```bash
+nl -s $'\t' -n ln a.txt
+```
