@@ -319,3 +319,8 @@ sed -e 's/\(.\)/\1 /g' < bert.txt > bert.char.txt
 ```bash
 nl -s $'\t' -n ln a.txt
 ```
+
+## Repartition and format a 4T USB drive into exFat on Mac
+```bash
+diskutil eraseDisk ExFAT toshiba-4t /dev/disk2
+```
