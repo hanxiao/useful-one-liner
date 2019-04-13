@@ -331,3 +331,8 @@ diskutil eraseDisk ExFAT toshiba-4t /dev/disk2
 time dd if=/dev/zero bs=1024k of=tstfile count=1024 2>&1 | awk '/sec/ {print $1 / $5 / 1048576, "MB/sec" }'
 ```
 
+## Change icon of a MacOS file/folder
+```bash
+# download https://sveinbjorn.org/osxiconutils
+./seticon /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/KEXT.icns /Volumes/TOSHIBA-4T/docker
+```
