@@ -324,3 +324,10 @@ nl -s $'\t' -n ln a.txt
 ```bash
 diskutil eraseDisk ExFAT toshiba-4t /dev/disk2
 ```
+
+## Test Disk Spee
+```bash
+# cd to the path you want to test
+time dd if=/dev/zero bs=1024k of=tstfile count=1024 2>&1 | awk '/sec/ {print $1 / $5 / 1048576, "MB/sec" }'
+```
+
