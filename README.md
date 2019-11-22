@@ -1,6 +1,13 @@
 # useful-one-liner
 Collection of one-liner commands useful for daily work
 
+## Delete many many files faster
+```bash
+perl -e 'for(<*>){((stat)[9]<(unlink))}' 
+# or
+rsync -r --ignore-existing --info=progress2 ~/Documents/demo-gif-search/data ./
+```
+
 ## Get latest image name on pierone
 ```bash
 pierone latest --url registry.opensource.zalan.do/ stups ubuntu
