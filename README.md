@@ -23,6 +23,13 @@ docker run -it mydocker1
 ```bash
 docker rm $(docker ps -a -q)
 ```
+
+## Stop all containers
+```bash
+docker stop $(docker ps -a -q)
+```
+
+
 ## Delete all images in docker
 ```bash
 docker rmi $(docker images -q -a)
